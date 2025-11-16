@@ -1,6 +1,6 @@
 @font-face {
     font-family: sf;
-    src: url(/Fonts/sf-pro-display_semibold.woff2);
+    src: url(/CSS_Practice/Fonts/sf-pro-display_semibold.woff2);
 }
 
 *{
@@ -15,18 +15,60 @@ html,body{
 }
 
 
-.parent{
-    height: 250px;
-    width: 250px;
-    background-color: lightblue;
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Image/pexels-jeff-guab-1263982-2407637.jpg);
+    background-size: cover;
+    background-position: center; 
     position: relative;
 }
 
-.child{
-    height: 50px;
-    width: 50px;
-    background-color: lightcoral;
-    position: absolute;
-    left: 100%;
-    bottom: 50%;
+#main .bottom{
+    position:absolute;
+    top:55%;
+    left: 5%;
+}
+
+h1{
+    font-size: 5em;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    padding: 15px 65% 25px 0;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.aside-1{
+    height: 100%;
+    width: 8%;
+    background:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1px);
+    position:absolute;
+    left: 70%;
+}
+.aside-2{
+    height: 100%;
+    width: 8%;
+    background:rgba(86, 82, 82, 0.367);
+    backdrop-filter: blur(1px);
+    position:absolute;
+    left: 78%;
+}
+.aside-3{
+    height: 100%;
+    width: 8%;
+    background:rgba(35, 35, 35, 0.38);
+    backdrop-filter: blur(1px);
+    position:absolute;
+    left: 86%;
 }
