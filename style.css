@@ -1,6 +1,12 @@
 @font-face {
-    font-family: sf;
+    font-family: semibold;
+    font-style: normal;
+    font-weight:100;
     src: url(/CSS_Practice/Fonts/sf-pro-display_semibold.woff2);
+}
+@font-face {
+    font-family: regular;
+    src: url(/CSS_Practice/Fonts/sf-pro-text_regular.woff2);
 }
 
 *{
@@ -11,64 +17,141 @@
 html,body{
     width: 100%;
     height: 100%;
-    font-family: sf;
+}
+
+.main{
+    width: 100%;
+    height: 123%;
+    background-color: #000;
+    
 }
 
 
-#main{
+.navbar{
+    height: 45px;
+    background-color: #191818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.8;
+    /* font-family: semibold; */
+    font-family: regular;
+}
+
+.navbar i{
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.main-1{
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.main-1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    /* overflow: hidden; */
+    background-color: #000;
+}
+
+.main-2{
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-2 video{
+    
+    width: 169%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.main-2 h2{
+    text-align: center;
+    background: linear-gradient(0deg, #7b8fa3, #697b8b 52%, #4c5b65);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: regular;
+    position:absolute;
+    left: 40%;
+    top: 130%;
+}
+
+.main-3{
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-3 video{
     width: 100%;
     height: 100%;
-    background-image: url(/CSS_Practice/Image/pexels-jeff-guab-1263982-2407637.jpg);
-    background-size: cover;
-    background-position: center; 
-    position: relative;
+    background-color: #fff;
 }
 
-#main .bottom{
-    position:absolute;
-    top:55%;
-    left: 5%;
+.main-3 h1{
+    
+    font-family: regular;
 }
 
-h1{
-    font-size: 5em;
+.main-3 > p{
+    font-family: regular;
+    font-size: 90px;
+    font-weight: 600;
+   background: linear-gradient(90deg, #a977c8, #6f8cc7 8.5%, #639a47 16.5%, #1d1d1f 33%, #1d1d1f 66%, #a977c8 83.5%, #6f8cc7 91.5%, #639a47);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.box_button p{
+    margin: 20px;
+
+}
+
+.box_button button{
+    padding: 16px 25px;
+    background-color: royalblue;
     color: #fff;
-}
-
-p{
-    color: #fff;
-    padding: 15px 65% 25px 0;
-}
-
-button{
-    padding: 10px 30px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.aside-1{
-    height: 100%;
-    width: 8%;
-    background:rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(1px);
+    font-family: regular;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
     position:absolute;
-    left: 70%;
-}
-.aside-2{
-    height: 100%;
-    width: 8%;
-    background:rgba(86, 82, 82, 0.367);
-    backdrop-filter: blur(1px);
-    position:absolute;
-    left: 78%;
-}
-.aside-3{
-    height: 100%;
-    width: 8%;
-    background:rgba(35, 35, 35, 0.38);
-    backdrop-filter: blur(1px);
-    position:absolute;
-    left: 86%;
+    left: 47%;
 }
