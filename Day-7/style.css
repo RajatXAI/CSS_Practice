@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.layout {
+  display: grid;
+  height: 100vh;
+
+  /* DESKTOP LAYOUT */
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas:
+    "header header header"
+    "sidebar main   main"
+    "footer footer footer";
+  gap: 10px;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  background: #4f46e5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  grid-area: sidebar;
+  background: #e5e7eb;
+  padding: 10px;
+}
+main {
+  grid-area: main;
+  background: #f9fafb;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background: #111827;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MOBILE LAYOUT (screen <= 600px) */
+@media (max-width: 600px) {
+  .layout {
+    /* 1 column only */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+
+    /* Areas ka order change kar diya */
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}
