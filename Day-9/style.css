@@ -1,0 +1,118 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__card{
+    width: 65%;
+    height: 90vh;
+    display: flex;
+}
+
+
+.card__left{
+
+    width: 60%;
+    height: 100%;
+    background-color: #FCC60C;
+    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card__left .logo{
+
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 8%;
+    left: 19%;
+}
+
+.card__left .left__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 28%;
+    left: 21%;
+}
+
+#pokemon{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.card__left .left__content h1{
+    font-size: 100px;
+}
+
+.card__left .left__content p{
+    line-height: 30px;
+}
+
+img{
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    top: 20%;
+    left: 46%;
+}
+
+.card__right{
+    width: 40%;
+    height: 100%;
+    background-color: #FBE8B5;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card__right span{
+    font-size: 48px;
+    position: absolute;
+    top: 10%;
+    left: 77%;
+}
+
+.card__right .right__dots{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 44%;
+    left: 79%;
+}
+
+.card__right .right__dots .dot-1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1f1e1e;
+}
+
+.card__right .right__dots .dot-2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FCC60C;
+}
