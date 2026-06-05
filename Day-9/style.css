@@ -13,106 +13,110 @@ body {
 }
 
 main{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.main__card{
-    width: 65%;
-    height: 90vh;
-    display: flex;
-}
+.card{
+    width:min(1200px,95%);
+    height:90vh;
 
+    display:flex;
+
+    position:relative;
+
+    border-radius:20px;
+    overflow:hidden;
+}
 
 .card__left{
+    width:60%;
+    background:#FCC60C;
 
-    width: 60%;
-    height: 100%;
-    background-color: #FCC60C;
-    
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    padding:60px;
+
+    display:flex;
+    flex-direction:column;
+
 }
 
-.card__left .logo{
-
-    width: 180px;
-    height: 100px;
-    position: absolute;
-    top: 8%;
-    left: 19%;
+.card__logo{
+    width:180px;
+    margin-bottom:60px;
 }
 
-.card__left .left__content{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: absolute;
-    top: 28%;
-    left: 21%;
+.card__content{
+    max-width:500px;
 }
 
-#pokemon{
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 5px;
+.card__subtitle{
+    letter-spacing:5px;
+    font-weight: 600;
 }
 
-.card__left .left__content h1{
-    font-size: 100px;
+.card__title{
+    font-size:clamp(4rem,8vw,7rem);
 }
 
-.card__left .left__content p{
-    line-height: 30px;
+.card__description{
+    max-width: 350px;
+    line-height:1.8;
+    margin-top:20px;
 }
 
-img{
-    width: 430px;
-    height: 430px;
-    position: absolute;
-    top: 20%;
-    left: 46%;
+.card__counter{
+    margin-top:24px;
 }
+
 
 .card__right{
-    width: 40%;
-    height: 100%;
-    background-color: #FBE8B5;
+    width:40%;
+    background:#FBE8B5;
 
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    display:flex;
+    justify-content:flex-end;
+
+    padding:60px;
 }
 
-.card__right span{
-    font-size: 48px;
-    position: absolute;
-    top: 10%;
-    left: 77%;
+.card__menu{
+    font-size:3rem;
 }
 
-.card__right .right__dots{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 44%;
-    left: 79%;
+.card__dots{
+    position:absolute;
+
+    right:40px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
-.card__right .right__dots .dot-1{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #1f1e1e;
+.card__dot{
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+    background:#FCC60C;
 }
 
-.card__right .right__dots .dot-2{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #FCC60C;
+.card__dot.active{
+    background:black;
+}
+
+.card__image{
+    position:absolute;
+
+    height:70%;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-10%,-50%);
 }
