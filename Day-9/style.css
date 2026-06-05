@@ -17,6 +17,7 @@ main{
     display:flex;
     justify-content:center;
     align-items:center;
+    background-color: rgb(192, 154, 29);
 }
 
 .card{
