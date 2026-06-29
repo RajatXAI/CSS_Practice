@@ -1,0 +1,126 @@
+@mixin position(
+    $type,
+    $top:null,
+    $right:null,
+    $bottom:null,
+    $left:null
+){
+
+    positon:$type;
+
+    @if $top{
+        top:$top;
+    }
+
+    @if $right{
+        right:$right;
+    }
+
+    @if $bottom{
+        bottom:$bottom;
+    }
+
+    @if $left{
+        left:$left;
+    }
+}
+
+
+@mixin flex(
+  $justify: null,
+  $align: null,
+  $direction: null,
+  $gap: null
+) {
+
+  display: flex;
+
+  @if $justify {
+    justify-content: $justify;
+  }
+  @if $align {
+    align-items: $align;
+  }
+  @if $direction {
+    flex-direction: $direction;
+  }
+  @if $gap {
+    gap: $gap;
+  }
+}
+
+
+@mixin dimensions(
+    $width:null,
+    $height:null
+){
+
+    @if $width{
+        width:$width;
+    }
+
+    @if $height{
+        height:$height;
+    }
+
+}
+
+@mixin circle($size){
+
+    width:$size;
+    height:$size;
+    border-radius:50%;
+
+}
+
+@mixin absolute(
+    $top: null,
+    $right: null,
+    $bottom: null,
+    $left: null,
+    $translateX: null,
+    $translateY: null
+) {
+
+    position: absolute;
+
+    @if $top != null {
+        top: $top;
+    }
+
+    @if $right != null {
+        right: $right;
+    }
+
+    @if $bottom != null {
+        bottom: $bottom;
+    }
+
+    @if $left != null {
+        left: $left;
+    }
+
+    @if $translateX != null or $translateY != null {
+
+        transform: translate(
+            if($translateX != null, $translateX, 0),
+            if($translateY != null, $translateY, 0)
+        );
+
+    }
+
+}
+
+@mixin bg-image(
+    $url,
+    $size: cover,
+    $position: center,
+    $repeat: no-repeat
+){
+
+    background-image: url($url);
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+
+}

@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as v;
+
+.button {
+    padding: .8rem 1.6rem;
+    border-radius: v.$radius-sm;
+    background: v.$primary;
+    color: v.$white;
+    cursor: pointer;
+}
