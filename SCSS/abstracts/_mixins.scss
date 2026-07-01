@@ -73,7 +73,7 @@
 
 }
 
-@mixin absolute(
+@mixin custom-absolute(
     $top: null,
     $right: null,
     $bottom: null,
@@ -111,6 +111,14 @@
 
 }
 
+@mixin center-absolute{
+
+    left: 50%;
+    topt: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
 @mixin bg-image(
     $url,
     $size: cover,
@@ -123,4 +131,19 @@
     background-position: $position;
     background-repeat: $repeat;
 
+}
+
+@mixin object-fit($w:null, $h:null){
+
+    @if $w{
+        width: $w;
+    };
+
+    @if $h{
+
+        height: $h;
+    }
+
+    object-fit: cover;
+    object-position: center;
 }
