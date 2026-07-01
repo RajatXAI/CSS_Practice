@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>SunMall Chips</title>
+</head>
+<body>
+    
+    <main>
+
+        <!--* ====================================================== -->
+        <!--? Navbar -->
+        <!--* ====================================================== -->
+
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="../../Image/sunMall-logo.png" alt="">
+            </div>
+            <div class="navbar__navigation">
+                <a href="#" class="active">HOME</a><span class="dot"></span>
+                <a href="#">CHIPS</a>
+                <a href="#">ABHOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="navbar__actions">
+                <div class="navbar__search">
+                    <span><i class="ri-search-line"></i></span>
+                    <p>Search for chips...</p>
+                </div>
+                <div class="navbar__cart">
+                    <div class="cart__divider"></div>
+                    <div class="cart__icon">
+                        <span><i class="ri-shopping-bag-line"></i></span>
+                    </div>
+                </div>
+                <span class="navbar__popup">4</span>
+            </div>
+        </nav>
+
+        <!--* ====================================================== -->
+        <!--? Hero -->
+        <!--* ====================================================== -->
+
+
+        <section class="hero">
+            <div class="hero__left">
+                <div class="hero__badge">
+                    <span><i class="ri-star-fill"></i></span>
+                    100% REAL INGREDIENTS
+                </div>
+                <div class="hero__heading">
+                    <h1>EAT OUR <span>GRILLED</span></h1>
+                    <h1>POTATO CHIPS</h1>
+                    <img src="../../Image/sunMall_proliine.png" alt="">
+                </div>
+                <div class="hero__description">
+                    <p>Satisfying savory Chinese meat sauce ships</p>
+                    <p>without any hart-to-find ingredients.</p>
+
+                </div>
+                <div class="hero__cta">
+                    <div class="hero__button">
+                        <div class="circle">
+                            <span><i class="ri-shopping-basket-line"></i></span>
+                        </div>
+                        <h3>ADD TO CART</h3>
+                    </div>
+                    <div class="hero__quantity">
+                        <span id="subtract"><i class="ri-subtract-line"></i></span>
+                        <div class="divider1"></div>
+                        <span id="num2"><i class="ri-number-2"></i></span>
+                        <div class="divider2"></div>
+                        <span id="addition"><i class="ri-add-line"></i></span>
+                    </div>
+                </div>
+                <div class="hero__features">
+                    <div class="hero__feature">
+                        <div class="feature__icon feature__icon--green">
+                            <span><i class="ri-leaf-fill"></i></span>
+                        </div>
+                        <div class="feature__text">
+                            <h4>100% NATURAL</h4>
+                            <p>No artifical flavors</p>
+                        </div>
+                    </div>
+                    <div class="hero__feature">
+                        <div class="feature__icon feature__icon--yellow">
+                            <span><i class="fa-solid fa-fire"></i></span>
+                        </div>
+                        <div class="feature__text">
+                            <h4>OVEN GRILLED</h4>
+                            <p>Not fried</p>
+                        </div>
+                    </div>
+                    <div class="hero__feature">
+                        <div class="feature__icon feature__icon--red">
+                            <span><i class="ri-poker-hearts-fill"></i></span>
+                        </div>
+                        <div class="feature__text">
+                            <h4>TASTY & CRUNCHY</h4>
+                            <p>Irresistible bite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__center">
+                <div class="bg-circle"></div>
+                <div class="center__img">
+                    <img src="../../Image/SunMall_hero.png" alt="">
+                </div>
+            </div>
+            <div class="hero__right">
+                <div class="hero__details">
+                    <div class="hero__logo">
+                        <span><i id="chili" class="fas fa-pepper-hot"></i></span>
+                    </div>
+                    <div class="hero__info">
+                        <h2>EXTRA CHILI</h2>
+                        <p>Zha jiang main is crazy hot<br>even when it's simplified</p>
+                    </div>
+                </div>
+                <div class="hero__details">
+                    <div class="hero__logo">
+                        <span><i id="lemon" class="fa-regular fa-lemon"></i></span>
+                    </div>
+                    <div class="hero__info">
+                        <h2>Lemon Craz</h2>
+                        <p>Comes with a lot extra energy<br>calories and Oxizen</p>
+                    </div>
+                </div>
+                <div class="hero__details">
+                    <div class="hero__logo">
+                        <span><i id="fire" class="fa-solid fa-fire"></i></span>
+                    </div>
+                    <div class="hero__info">
+                        <h2>SMOKEY SAUCE</h2>
+                        <p>The sauce is kind of<br>reminiscent of a Chinese</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--* ====================================================== -->
+        <!--? Slider -->
+        <!--* ====================================================== -->
+
+        <section class="slider">
+            <div class="slider__sidebar">
+                <div class="slider__title">
+                    <div class="title__description">
+                        <p>OUR TOP</p>
+                        <p>FLAVOURS</p>
+                    </div>
+                    <div class="bottom-line"><span class="d-dot"></span></div>
+                </div>
+                <div class="slider__controls">
+                    <div class="left left--color"><span><i class="ri-arrow-left-line"></i></span></div>
+                    <div class="right"><span><i class="ri-arrow-right-line"></i></span></div>
+                </div>
+            </div>
+            <div class="slider__products">
+                <article class="product__card">
+                    <div class="product__img">
+                        <img src="../../Image/sunMall_chips1.png" alt="">
+                    </div>
+                    <div class="product__detail">
+                        <h2>BLACK BARBECUE</h2>
+                        <p>⭐⭐⭐⭐⭐<span>(4.8)</span></p>
+                        <strong>$12.30</strong>
+                        <button>ORDER NOW <span><i class="ri-arrow-right-line"></i></span></button>
+                    </div>
+                </article>
+                <article class="product__card">
+                    <div class="product__img">
+                        <img src="../../Image/sunMall_chips3.png" alt="">
+                    </div>
+                    <div class="product__detail">
+                        <h2>MR. POTATO</h2>
+                        <p>⭐⭐⭐⭐⭐<span>(4.9)</span></p>
+                        <strong>$15.89</strong>
+                        <button>ORDER NOW <span><i class="ri-arrow-right-line"></i></span></button>
+                    </div>
+                </article>
+                <article class="product__card">
+                    <div class="product__img">
+                        <img src="../../Image/sunMall_chips2.png" alt="">
+                    </div>
+                    <div class="product__detail">
+                        <h2>TOM YOMM</h2>
+                        <p>⭐⭐⭐⭐⭐<span>(4.7)</span></p>
+                        <strong>$11.50</strong>
+                        <button>ORDER NOW <span><i class="ri-arrow-right-line"></i></span></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
