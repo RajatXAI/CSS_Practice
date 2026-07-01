@@ -316,8 +316,8 @@ main {
 .hero__right {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-right: 35px;
+  gap: 4rem;
+  padding-right: 40px;
 }
 .hero__details {
   display: flex;
